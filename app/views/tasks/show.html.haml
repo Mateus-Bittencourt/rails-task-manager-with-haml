@@ -7,4 +7,6 @@
     - else
       %i.fas.fa-square
     Completed
-  = link_to 'Back', tasks_path, class: 'btn-back'
+    %hr
+    = link_to 'Edit task', edit_task_path(@task), class: 'btn'
+    = link_to 'Back', tasks_path, class: 'btn'

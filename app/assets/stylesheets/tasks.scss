@@ -30,6 +30,7 @@ a {
 
 dl {
   color: rgb(0, 0, 0);
+  margin-bottom: 0;
   @include card;
   a {
     color: rgb(36, 32, 32);
@@ -49,10 +50,18 @@ dl {
   }
 }
 
-.btn-back {
+// @mixin buttons {
+
+// }
+
+// .btn-back {
+//   @include buttons;
+//   margin: 10px;
+// }
+
+.btn {
   font-size: 18px;
   display: inline-block;
-  margin: 10px;
   width: auto;
   padding: 10px 20px;
   border-radius: 20px;
@@ -67,4 +76,8 @@ dl {
     border: 3px solid #000;
     transition: 1000ms;
   }
+}
+
+.form-control {
+  border-radius: 20px;
 }

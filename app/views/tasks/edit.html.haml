@@ -4,5 +4,6 @@
     = simple_form_for(@task) do |f|
       = f.input :title
       = f.input :details
-      = f.button :submit, 'Add task', class: 'btn'
+      = f.input :completed
+      = f.button :submit, 'Update task', class: 'btn'
       = link_to "Back", tasks_path, class: 'btn'
