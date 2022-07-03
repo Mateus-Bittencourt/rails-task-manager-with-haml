@@ -1,0 +1,8 @@
+.container
+  %h1 Add a new task
+  .content
+    = simple_form_for(@task) do |f|
+      = f.input :title
+      = f.input :details
+      = f.button :submit, 'Add task', class: 'btn-back'
+      = link_to "Back", tasks_path, class: 'btn-back'

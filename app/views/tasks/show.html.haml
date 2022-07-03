@@ -1,0 +1,10 @@
+.container
+  %h1=@task.title
+  .content
+    %p=@task.details
+    - if @task.completed
+      %i.fas.fa-check-square
+    - else
+      %i.fas.fa-square
+    Completed
+  = link_to 'Back', tasks_path, class: 'btn-back'
